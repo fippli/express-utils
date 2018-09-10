@@ -44,19 +44,19 @@ const deleteSuccess = ( response, dataName, dataFilter ) => {
 };
 
 // Error
-const getError = () => {
+const getError = ( response, dataName ) => {
     return errorResponse( `Could not get ${dataName}.`, response );
 };
 
-const putError = () => {
+const putError = ( response, dataName ) => {
     return errorResponse( `Could not update ${dataName}.`, response );
 };
 
-const postError = () => {
+const postError = ( response, dataName ) => {
     return errorResponse( `Could not add ${dataName}.`, response );
 };
 
-const deleteError = () => {
+const deleteError = ( response, dataName ) => {
     return errorResponse( `Could not delete ${dataName}.`, response );
 };
 
