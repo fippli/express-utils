@@ -1,6 +1,6 @@
 {
   "name": "@fippli/express-utils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Utils for express js development",
   "main": "index.js",
   "scripts": {
