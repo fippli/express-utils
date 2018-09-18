@@ -60,6 +60,21 @@ const deleteError = ( response, dataName ) => {
     return errorResponse( `Could not delete ${dataName}.`, response );
 };
 
+//
+// url
+//
+const buildUrl = url => {
+
+    console.log( "env:", process.env.NODE_ENV );
+
+    if ( process.env.NODE_ENV === "development" ) {
+        return `http://localhost:${process.env.PORT}${url}`
+    }
+
+    return url
+
+};
+
 module.exports = {
     errorResponse: errorResponse,
     successResponse: successResponse,
@@ -71,4 +86,6 @@ module.exports = {
     putError: putError,
     postError: postError,
     deleteError: deleteError,
+
+    buildUrl: buildUrl,
 };
