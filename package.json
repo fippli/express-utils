@@ -19,7 +19,7 @@
     "url": "https://github.com/fippli/express-utils/issues"
   },
   "homepage": "https://github.com/fippli/express-utils#readme",
-  "dependencies": {
+  "devDependencies": {
     "jest": "^23.6.0"
   }
 }

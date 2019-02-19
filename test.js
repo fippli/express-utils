@@ -4,6 +4,7 @@ const expressUtils = require( "./index.js" );
 
 process.env.NODE_ENV = "production";
 process.env.PORT = 8000;
+console.log( process.env );
 
 //
 // Test build url
