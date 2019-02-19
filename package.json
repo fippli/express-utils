@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/fippli/express-utils#readme",
   "devDependencies": {
-    "jest": "^23.6.0"
+    "jest": "^24.1.0"
   }
 }

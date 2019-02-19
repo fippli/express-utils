@@ -1,10 +1,8 @@
 const expressUtils = require( "./index.js" );
 
 // Development env
-
 process.env.NODE_ENV = "production";
 process.env.PORT = 8000;
-console.log( process.env );
 
 //
 // Test build url
@@ -18,7 +16,3 @@ if ( process.env.NODE_ENV === "development" ) {
         expect( expressUtils.buildUrl( "/" ) ).toBe( "/" );
     } );
 }
-
-
-
-
